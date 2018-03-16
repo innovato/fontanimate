@@ -1,0 +1,27 @@
+{
+  "name": "fontanimate",
+  "version": "0.1.0",
+  "description": "Library for drawing animation for Font Awesome icons",
+  "main": "fontanimate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innovato/fontanimate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/innovato/fontanimate/issues"
+  },
+  "homepage": "https://github.com/innovato/fontanimate#readme",
+  "dependencies": {
+    "vivus": "^0.4.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  }
+}

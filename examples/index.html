@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Font Awesome Animation</title>
+		<style>
+			.font-animate {
+				font-size: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Font Awesome Animation Examples</h2>
+		<h3>Default Font Animation</h3>
+		<i class="fab fa-500px font-animate"></i>
+		<i class="fab fa-apple font-animate"></i>
+
+		<h3>Animation with Inline options</h3>
+		<i data-duration="500" data-stroke-width="5" data-stroke="blue" class="fab fa-500px font-animate"></i>
+		<i data-duration="500" data-stroke-width="5" data-stroke="#FF0000" class="fab fa-apple font-animate"></i>
+
+		<!-- Required scripts: FontAwesome and jQuery -->
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Include FontAnimate and launch the animation on specified selector -->
+		<script src="../dist/fontanimate.min.js"></script>
+		<script type="text/javascript">
+		  $(document).ready(function () {
+			$('.font-animate').fontAnimate();
+		  });
+		</script>
+	</body>
+</html>
