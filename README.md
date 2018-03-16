@@ -1,6 +1,8 @@
 # Font Animate
 Library for adding a drawing animation for Font Awesome icons.
 
+![Font Animate Preview](https://raw.githubusercontent.com/innovato/fontanimate/master/assets/fontanimate-preview.gif)
+
 ## Usage
 Add the dependencies to your HTML:
 ```html
