@@ -1,5 +1,5 @@
 # Font Animate
-Library for adding a drawing animation for Font Awesome icons.
+Library for adding a drawing animation to Font Awesome 5 icons.
 
 ![Font Animate Preview](https://raw.githubusercontent.com/innovato/fontanimate/master/assets/fontanimate-preview.gif)
 
@@ -34,20 +34,26 @@ $(document).ready(function () {
 Done!
 
 ## Options
+The plugin options are devided in two parts:
+* Font Animate options
+* [Vivus](https://github.com/maxwellito/vivus) options (dependency for SVG animation)
+
+### Font Animate options
 | Name        | Type     | Description |
 |-------------|----------|-------------|
 |`stroke`     | string   | The stroke color. E.g. `red`, `#000`, `#00FF00`, [Default: `currentColor` (inherits color)] |
 |`fill`       | string   | The fill color. E.g. `red`, `#000`, `#00FF00`, [Default: `transparent`] |
 |`strokeWidth`| integer  | The stroke width. Default: `1` |
 
-Refer to [Vivus](https://github.com/maxwellito/vivus) for animation-specific options. All Vivus options are available for use in this library.
+### Vivus options
+Refer to [Vivus](https://github.com/maxwellito/vivus) for animation specific options. All Vivus options are available for use in this library.
 
-### Example with mixed Font Animate/Vivus options
+#### Example with mixed Font Animate/Vivus options
 ```javascript
 $(document).ready(function () {
   $('.font-animate').fontAnimate({
     stroke: 'red',
-    start: 'autostart' // Vivus-specific animation option
+    duration: 500 // Vivus specific animation option
   });
 });
 ```
@@ -55,7 +61,7 @@ $(document).ready(function () {
 ### Options through HTML attributes
 It is possible to override the initial options through HTML attributes:
 ```html
-<i data-stroke="red" data-stroke-width="5" data-fill="green" class="fab fa-apple font-animate"></i>
+<i data-stroke="red" data-stroke-width="5" data-fill="green" data-duration="1000" class="fab fa-apple font-animate"></i>
 ```
 
 ## Credits
