@@ -1,10 +1,10 @@
 {
   "name": "fontanimate",
   "version": "0.1.0",
-  "description": "Library for drawing animation for Font Awesome icons",
+  "description": "Library for adding a drawing animation to Font Awesome 5 icons",
   "main": "fontanimate.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx webpack src/fontanimate.js --output dist/fontanimate.min.js"
   },
   "repository": {
     "type": "git",
