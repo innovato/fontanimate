@@ -3,20 +3,20 @@ Library for adding a drawing animation for Font Awesome icons.
 
 ## Usage
 Add the dependencies to your HTML:
-```
+```html
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 ```
 
 Add some Font Awesome Icons (note the `font-animate` class):
-```
+```html
 <i class="fab fa-500px font-animate"></i>
 <i class="fab fa-apple font-animate"></i>
 ```
 
 Initiate Font Animate:
 
-```
+```javascript
 $(document).ready(function () {
   $('.font-animate').fontAnimate();
 });
@@ -33,7 +33,7 @@ Done!
 Refer to [Vivus](https://github.com/maxwellito/vivus) for animation-specific options. All Vivus options are available for use in this library.
 
 ### Example with mixed Font Animate/Vivus options
-```
+```javascript
 $(document).ready(function () {
   $('.font-animate').fontAnimate({
     stroke: 'red',
