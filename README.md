@@ -39,11 +39,12 @@ The plugin options are divided in two parts:
 * [Vivus](https://github.com/maxwellito/vivus) options (dependency for SVG animation)
 
 ### Font Animate options
-| Name        | Type     | Description |
-|-------------|----------|-------------|
-|`stroke`     | string   | The stroke color. E.g. `red`, `#000`, `#00FF00`, [Default: `currentColor` (inherits color)] |
-|`fill`       | string   | The fill color. E.g. `red`, `#000`, `#00FF00`, [Default: `transparent`] |
-|`strokeWidth`| integer  | The stroke width. Default: `1` |
+| Name          | Type     | Description |
+|---------------|----------|-------------|
+|`stroke`       | string   | Stroke color. E.g. `red`, `#000`, `#00FF00`, [Default: `currentColor` (inherits color)] |
+|`fill`         | string   | Fill color. E.g. `red`, `#000`, `#00FF00`, [Default: `transparent`] |
+|`strokeWidth`  | integer  | Stroke width. [Default: `1`] |
+|`callback`     | function | Callback at the end of the animation. [Default: `(obj) => {}`] |
 
 ### Vivus options
 Refer to [Vivus](https://github.com/maxwellito/vivus) for animation specific options. All Vivus options are available for use in this library.

@@ -13,7 +13,8 @@ import Vivus from 'vivus';
     var settings = $.extend({
       stroke: 'currentColor',
       fill: 'transparent',
-      strokeWidth: 1
+      strokeWidth: 1,
+      callback: (obj) => {}
     }, options);
 
     this.each(function (i) {
@@ -25,7 +26,7 @@ import Vivus from 'vivus';
           .attr('stroke', settings.stroke)
           .attr('stroke-width', settings.strokeWidth);
       });
-      new Vivus(id, settings);
+      new Vivus(id, settings, settings.callback);
     });
   };
 }(jQuery));
