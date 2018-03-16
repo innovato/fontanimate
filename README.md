@@ -42,6 +42,12 @@ $(document).ready(function () {
 });
 ```
 
+### Options through HTML attributes
+It is possible to override the initial options through HTML attributes:
+```html
+<i data-stroke="red" data-stroke-width="5" data-fill="green" class="fab fa-apple font-animate"></i>
+```
+
 ## Credits
 A big thanks to:
 - [Vivus](https://github.com/maxwellito/vivus) for the SVG animation library!
