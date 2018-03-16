@@ -18,7 +18,7 @@ Add the dependencies to your HTML:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 ```
 
-Add some Font Awesome Icons (note the `font-animate` class):
+Add some [Font Awesome Icons](https://fontawesome.com/icons?d=gallery) (note the `font-animate` class):
 ```html
 <i class="fab fa-500px font-animate"></i>
 <i class="fab fa-apple font-animate"></i>
@@ -34,7 +34,7 @@ $(document).ready(function () {
 Done!
 
 ## Options
-The plugin options are devided in two parts:
+The plugin options are divided in two parts:
 * Font Animate options
 * [Vivus](https://github.com/maxwellito/vivus) options (dependency for SVG animation)
 
