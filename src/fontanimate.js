@@ -7,15 +7,6 @@ import Vivus from 'vivus';
  *
  *  Copyright (c) 2018 by Innovato
  *  This code is licensed under MIT license (see LICENSE file for details)
- *
- *  Plugin options:
- *  stroke: the stroke color (hex or color name)
- *  fill: the fill color (hex or color name)
- *  strokeWidth: the stroke width - Integer
- *
- *  This plugin depends on Vivus and accepts all their options as well.
- *  See the official Vivus documentation:
- *  https://github.com/maxwellito/vivus
  */
 (function ($) {
   $.fn.fontAnimate = function (options) {
@@ -34,7 +25,6 @@ import Vivus from 'vivus';
           .attr('stroke', settings.stroke)
           .attr('stroke-width', settings.strokeWidth);
       });
-      $(this).show();
       new Vivus(id, settings);
     });
   };
