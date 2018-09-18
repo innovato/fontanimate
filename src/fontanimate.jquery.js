@@ -8,25 +8,18 @@ import Vivus from 'vivus';
  *  Copyright (c) 2018 by Innovato
  *  This code is licensed under MIT license (see LICENSE file for details)
  */
-class FontAnimate {
-
-  static init(className, options = {}) {
-    var settings = Object.assign({}, options, {
+(function ($) {
+  $.fn.fontAnimate = function (options) {
+    var settings = $.extend({
       stroke: 'currentColor',
       fill: 'transparent',
       strokeWidth: 1,
-      callback: (obj) => {
-      }
-    });
+      callback: (obj) => {}
+    }, options);
 
-    var elements = document.querySelector(className);
-
-    elements.forEach(function (e, i) {
+    this.each(function (i) {
+      settings = $.extend(settings, $(this).data());
       var id = "font-animate-" + i;
-
-
-      var elements = e.children
-
       $(this).attr('id', id).find('path').each(function () {
         $(this)
           .attr('fill', settings.fill)
@@ -35,5 +28,5 @@ class FontAnimate {
       });
       new Vivus(id, settings, settings.callback);
     });
-  }
-}
+  };
+}(jQuery));
