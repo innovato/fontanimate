@@ -1,6 +1,6 @@
 {
   "name": "fontanimate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Library for adding a drawing animation to Font Awesome 5 icons",
   "main": "fontanimate.js",
   "scripts": {
